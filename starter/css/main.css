@@ -149,13 +149,10 @@ ul {
 .btn:hover {
   background: var(--primary-700);
   box-shadow: var(--shadow-3);
-}
-.btn-hipster {
-  color: var(--primary-500);
-  background: var(--primary-200);
-}
-.btn-hipster:hover {
-  color: var(--primary-200);
+  transition: all 2s ease-in-out 5ms;
+  border-radius: 80px;
+  transform:   rotate(3deg);
+  background: var(--primary-700);
   background: var(--primary-700);
 }
 .btn-block {
