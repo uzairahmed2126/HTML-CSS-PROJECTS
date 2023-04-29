@@ -149,10 +149,13 @@ ul {
 .btn:hover {
   background: var(--primary-700);
   box-shadow: var(--shadow-3);
-  transition: all 2s ease-in-out 5ms;
-  border-radius: 80px;
-  transform:   rotate(3deg);
-  background: var(--primary-700);
+}
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
   background: var(--primary-700);
 }
 .btn-block {
@@ -257,3 +260,59 @@ Navbar
 ===============
 */
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-center {
+  width: 90vw;
+  max-width: var(--max-width);
+}
+.nav-header {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header img {
+  width: 200px;
+}
+.nav-logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-btn {
+  padding: 0.15rem 0.75rem;
+}
+.nav-btn i {
+  font-size: 1.25rem;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  /* todo */
+  height: 0;
+  overflow: hidden;
+  transition:var(--transition);
+}
+.show-links {
+  height: 310px;
+}
+.nav-link {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--grey-900);
+  letter-spacing: var(--letterSpacing);
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-500);
+  transition: var(--transition);
+}
+.nav-link:hover {
+  color: var(--primary-500);
+}
+.contact-link a {
+  padding: 0.15rem 1rem;
+}
